@@ -14,6 +14,18 @@ To download a pre-compressed model (for CPU/GPU only - NPU please follow the abo
 ```
 huggingface-cli.exe download OpenVINO/Phi-3-mini-4k-instruct-int4-ov --local-dir Phi-3-mini-4k-instruct-int4-ov
 ```
+
+To obtain a meta llama demo, please first get a access token from this link [Access Security Tokens](https://huggingface.co/docs/hub/en/security-tokens), then login with the command line
+
+```
+huggingface-cli login
+```
+
+```
+optimum-cli export openvino --model meta-llama/Llama-3.2-3B-Instruct --task text-generation-with-past --weight-format int4 --group-size -1 --sym --ratio 1.0 llama-3.2-3b-instruct-INT4
+```
+
+
 ## How to Run
 
 ```
