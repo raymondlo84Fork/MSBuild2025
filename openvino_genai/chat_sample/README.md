@@ -34,8 +34,9 @@ python chat_sample.py TinyLlama-1.1B-Chat-v1.0
 ```
 or replace `TinyLlama-1.1B-Chat-v1.0` with other models such as `Phi-3-mini-4k-instruct-int4-ov` or `Llama-3.2-3B-Instruct`.
 
+Llama 3.2 3B example output:
+![Screenshot 2025-04-28 133741](https://github.com/user-attachments/assets/532f6d66-2cc4-4a29-b71c-9c15f3716e7e)
 
 ## References:
 NPU with OpenVINO GenAI: https://docs.openvino.ai/2025/openvino-workflow-generative/inference-with-genai/inference-with-genai-on-npu.html
-
 
