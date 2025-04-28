@@ -1,10 +1,21 @@
-# OpenVINO Chat Sample 
+# OpenVINO Demos
 
 ## How to setup
 
-1. Download OpenVINO Sample Code [Here](https://storage.openvinotoolkit.org/repositories/openvino_genai/packages/2025.1/windows/openvino_genai_windows_2025.1.0.0_x86_64.zip)
+1. Download OpenVINO Sample Code
+- (https://storage.openvinotoolkit.org/repositories/openvino_genai/packages/2025.1/windows/openvino_genai_windows_2025.1.0.0_x86_64.zip
 
-2.
+2. Install all latest drivers here
+- NPU Driver: https://www.intel.com/content/www/us/en/download/794734/intel-npu-driver-windows.html
+- GPU Driver: https://www.intel.com/content/www/us/en/download/785597/intel-arc-iris-xe-graphics-windows.html
+
+3. Install Python 3.12.x
+- https://www.python.org/ftp/python/3.12.9/python-3.12.9-amd64.exe
+
+4. Enable PowerShell for venv
+```
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
+```
 
 ## How to compress or download a model from HuggingFace
 
