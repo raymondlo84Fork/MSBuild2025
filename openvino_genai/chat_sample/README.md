@@ -37,3 +37,5 @@ or replace `TinyLlama-1.1B-Chat-v1.0` with other models such as `Phi-3-mini-4k-i
 
 ## References:
 NPU with OpenVINO GenAI: https://docs.openvino.ai/2025/openvino-workflow-generative/inference-with-genai/inference-with-genai-on-npu.html
+
+
