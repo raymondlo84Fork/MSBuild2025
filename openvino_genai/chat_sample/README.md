@@ -14,6 +14,7 @@ To download a pre-compressed model (for CPU/GPU only):
 ```
 huggingface-cli.exe download OpenVINO/Phi-3-mini-4k-instruct-int4-ov --local-dir Phi-3-mini-4k-instruct-int4-ov
 ```
+or experiment with the latest Phi-4-mini
 ```
 huggingface-cli.exe download OpenVINO/Phi-4-mini-instruct-int4-ov --local-dir Phi-4-mini-instruct-int4-ov
 ```
