@@ -1,5 +1,8 @@
 # OpenVINO Chat Sample
 
+Follow instructions here to prepare the environment:
+https://github.com/raymondlo84Fork/MSBuild2025/blob/main/openvino_genai/README.MD
+
 ## How to compress or download a model from HuggingFace
 
 To download and compress a model (CPU/GPU/NPU):
