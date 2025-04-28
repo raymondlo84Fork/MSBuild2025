@@ -18,3 +18,21 @@ If NPU is the inference device, an additional option --disable-stateful is requi
 ```
 optimum-cli export openvino --trust-remote-code --model openai/whisper-base whisper-base-npu --disable-stateful
 ```
+
+## Using the recorder
+
+Install the dependencies
+```
+pip install pyaudio
+```
+Run the recorder, and it will record from the microphone for 5 seconds.
+
+## Run the code
+
+```
+python whisper_speech_recognition.py one_step.wav
+```
+
+
+
+
