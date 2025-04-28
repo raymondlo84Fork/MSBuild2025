@@ -30,19 +30,9 @@ pip install openvino==2025.1 openvino-tokenizers==2025.1 openvino-genai==2025.1
 ```
 Note: Only 2025.1 is validated for this demo.
 
-
-## How to compress or download a model from HuggingFace
-
-To download and compress a model (CPU/GPU/NPU):
+To validate the installation, run the following command and you should be able to see `[CPU, GPU, NPU]` in the list of available devices
 ```
-optimum-cli export openvino -m TinyLlama/TinyLlama-1.1B-Chat-v1.0 --weight-format int4 --sym --ratio 1.0 --group-size 128 TinyLlama-1.1B-Chat-v1.0
+python -c "from openvino import Core; print(Core().available_devices)"
 ```
-
-To download a pre-compressed model (for CPU/GPU only - NPU please follow the above compression methods):
-```
-huggingface-cli.exe download OpenVINO/Phi-3-mini-4k-instruct-int4-ov --local-dir Phi-3-mini-4k-instruct-int4-ov
-```
-
-
 ## References:
 NPU with OpenVINO GenAI: https://docs.openvino.ai/2025/openvino-workflow-generative/inference-with-genai/inference-with-genai-on-npu.html
