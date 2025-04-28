@@ -1,7 +1,12 @@
 # OpenVINO Chat Sample
 
 Follow instructions here to prepare the environment:
-https://github.com/raymondlo84Fork/MSBuild2025/blob/main/openvino_genai/README.MD
+https://github.com/raymondlo84Fork/MSBuild2025/blob/main/openvino_genai/README.md
+
+```
+#Make sure you activate the environment after restarting the terminal
+./openvino_venv/Script/bin
+```
 
 ## How to compress or download a model from HuggingFace
 
@@ -12,11 +17,11 @@ optimum-cli export openvino -m TinyLlama/TinyLlama-1.1B-Chat-v1.0 --weight-forma
 
 To download a pre-compressed model (for CPU/GPU only):
 ```
-huggingface-cli.exe download OpenVINO/Phi-3-mini-4k-instruct-int4-ov --local-dir Phi-3-mini-4k-instruct-int4-ov
+huggingface-cli download OpenVINO/Phi-3-mini-4k-instruct-int4-ov --local-dir Phi-3-mini-4k-instruct-int4-ov
 ```
 or experiment with the latest Phi-4-mini
 ```
-huggingface-cli.exe download OpenVINO/Phi-4-mini-instruct-int4-ov --local-dir Phi-4-mini-instruct-int4-ov
+huggingface-cli download OpenVINO/Phi-4-mini-instruct-int4-ov --local-dir Phi-4-mini-instruct-int4-ov
 ```
 
 For NPU usage, please make sure the flags `--sym` and `--group-size 128` are set.
