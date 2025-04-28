@@ -21,11 +21,10 @@ optimum-cli export openvino --trust-remote-code --model openai/whisper-base whis
 
 ## Using the recorder
 
-Install the dependencies
 ```
-pip install pyaudio
+python recorder.py
 ```
-Run the recorder, and it will record from the microphone for 5 seconds.
+This will run the recorder, and it will record from the microphone for 5 seconds.
 
 ## Run the code
 
