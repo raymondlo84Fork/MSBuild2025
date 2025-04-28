@@ -3,7 +3,7 @@
 ## How to setup
 
 1. Download OpenVINO Sample Code
-- (https://storage.openvinotoolkit.org/repositories/openvino_genai/packages/2025.1/windows/openvino_genai_windows_2025.1.0.0_x86_64.zip
+- https://storage.openvinotoolkit.org/repositories/openvino_genai/packages/2025.1/windows/openvino_genai_windows_2025.1.0.0_x86_64.zip
 
 2. Install all latest drivers here
 - NPU Driver: https://www.intel.com/content/www/us/en/download/794734/intel-npu-driver-windows.html
