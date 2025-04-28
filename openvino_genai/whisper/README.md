@@ -30,7 +30,7 @@ Run the recorder, and it will record from the microphone for 5 seconds.
 ## Run the code
 
 ```
-python whisper_speech_recognition.py one_step.wav
+python whisper_speech_recognition.py whisper-base count.wav
 ```
 
 
