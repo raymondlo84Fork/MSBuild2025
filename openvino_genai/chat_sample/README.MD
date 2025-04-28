@@ -8,7 +8,7 @@
 
 ## How to compress or download a model from HuggingFace
 
-To download and compress a model:
+To download and compress a model (CPU/GPU/NPU):
 ```
 optimum-cli export openvino -m TinyLlama/TinyLlama-1.1B-Chat-v1.0 --weight-format int4 --sym --ratio 1.0 --group-size 128 TinyLlama-1.1B-Chat-v1.0
 ```
