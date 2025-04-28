@@ -13,7 +13,7 @@ First we download and export the whisper model from huggingface for CPU or GPU.
 ```
 optimum-cli export openvino --trust-remote-code --model openai/whisper-base whisper-base
 ```
-If NPU is the inference device, an additional option --disable-stateful is required. See (NPU with OpenVINO GenAI)[https://docs.openvino.ai/2025/openvino-workflow-generative/inference-with-genai/inference-with-genai-on-npu.html] for the detail.
+If NPU is the inference device, an additional option --disable-stateful is required. See [NPU with OpenVINO GenAI](https://docs.openvino.ai/2025/openvino-workflow-generative/inference-with-genai/inference-with-genai-on-npu.html) for the detail.
 
 ```
 optimum-cli export openvino --trust-remote-code --model openai/whisper-base whisper-base-npu --disable-stateful
