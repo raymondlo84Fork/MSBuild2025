@@ -31,7 +31,7 @@ optimum-cli export openvino --model meta-llama/Llama-3.2-3B-Instruct --task text
 ```
 python chat_sample.py TinyLlama-1.1B-Chat-v1.0
 ```
-or replace `TinyLlama-1.1B-Chat-v1.0` with your own model
+or replace `TinyLlama-1.1B-Chat-v1.0` with other models such as `Phi-3-mini-4k-instruct-int4-ov` or `Llama-3.2-3B-Instruct`.
 
 
 ## References:
