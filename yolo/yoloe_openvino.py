@@ -15,16 +15,14 @@ model.set_classes(names, model.get_text_pe(names))
 model.export(format="openvino", dynamic=False, half=True)
 
 model_ov = YOLO(ov_model_name)
-video_cap = cv2.VideoCapture(1)
-#video_cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)
-#video_cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
+video_cap = cv2.VideoCapture(0)
+#video_cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
+#video_cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
 
 while True:
 	ret, frame = video_cap.read()
-
 	#can choose between intel:cpu, intel:gpu, or intel:npu
-	results = model_ov.predict(frame,conf=0.1, device="intel:gpu")
-
+	results = model_ov.predict(frame,conf=0.1, device="intel:cpu")
 	# Show results
 	frame_out=results[0].plot()
 	if not ret:
