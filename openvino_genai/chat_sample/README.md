@@ -8,12 +8,7 @@ https://github.com/raymondlo84Fork/MSBuild2025/blob/main/openvino_genai/README.m
 ./openvino_venv/Script/bin
 ```
 
-## How to compress or download a model from HuggingFace
-
-To download and compress a model (CPU/GPU/NPU):
-```
-optimum-cli export openvino -m TinyLlama/TinyLlama-1.1B-Chat-v1.0 --weight-format int4 --sym --ratio 1.0 --group-size 128 TinyLlama-1.1B-Chat-v1.0
-```
+## How to use a LLM model from HuggingFace
 
 To download a pre-compressed model (for CPU/GPU only):
 ```
@@ -24,6 +19,10 @@ or experiment with the latest Phi-4-mini
 huggingface-cli download OpenVINO/Phi-4-mini-instruct-int4-ov --local-dir Phi-4-mini-instruct-int4-ov
 ```
 
+To download and compress a model (CPU/GPU/NPU):
+```
+optimum-cli export openvino -m TinyLlama/TinyLlama-1.1B-Chat-v1.0 --weight-format int4 --sym --ratio 1.0 --group-size 128 TinyLlama-1.1B-Chat-v1.0
+```
 For NPU usage, please make sure the flags `--sym` and `--group-size 128` are set.
 
 To obtain a meta llama demo, please first get a access token from this link [Access Security Tokens](https://huggingface.co/docs/hub/en/security-tokens), then login with the command line. Additionally, you have to accept to the agreement and wait for the approval (https://huggingface.co/meta-llama). Often this only take a few minutes to an hour.
@@ -36,7 +35,7 @@ Then, you can execute this command.
 optimum-cli export openvino --model meta-llama/Llama-3.2-3B-Instruct --task text-generation-with-past --weight-format int4 --group-size -1 --sym --ratio 1.0 llama-3.2-3b-instruct-INT4
 ```
 
-Lastly, you can also download and convert the `Phi-3-mini-4k-instruct` model with this command that is very similar to Meta Llama 3.2B for NPU. 
+Lastly, you can also also convert the `Phi-3-mini-4k-instruct` model with this command that is very similar to Meta Llama 3.2B for NPU. 
 ```
 optimum-cli export openvino --model microsoft/Phi-3-mini-4k-instruct --task text-generation-with-past --weight-format int4 --group-size -1 --sym --ratio 1.0 microsoft/Phi-3-mini-4k-instruct-INT4
 ```
@@ -44,7 +43,7 @@ optimum-cli export openvino --model microsoft/Phi-3-mini-4k-instruct --task text
 ## How to Run
 
 ```
-python chat_sample.py TinyLlama-1.1B-Chat-v1.0
+python chat_sample.py Phi-4-mini-instruct-int4-ov
 ```
 or replace `TinyLlama-1.1B-Chat-v1.0` with other models such as `Phi-3-mini-4k-instruct-int4-ov` or `Llama-3.2-3B-Instruct`.
 
