@@ -26,7 +26,7 @@ pip install openvino==2025.1 openvino-tokenizers==2025.1 openvino-genai==2025.1
 #for whisper demo
 pip install pyaudio librosa
 ```
-Note: Only 2025.1 is validated for this demo.
+Note: Only OpenVINO 2025.1 is validated for this demo.
 
 To validate the installation, run the following command and you should be able to see `[CPU, GPU, NPU]` in the list of available devices
 ```
