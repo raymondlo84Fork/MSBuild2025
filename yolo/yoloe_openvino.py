@@ -22,7 +22,7 @@ video_cap = cv2.VideoCapture(0)
 while True:
 	ret, frame = video_cap.read()
 	#can choose between intel:cpu, intel:gpu, or intel:npu
-	results = model_ov.predict(frame,conf=0.1, device="intel:cpu")
+	results = model_ov.predict(frame,conf=0.1, device="intel:gpu")
 	# Show results
 	frame_out=results[0].plot()
 	if not ret:
