@@ -17,7 +17,7 @@ huggingface-cli download OpenVINO/Phi-4-mini-instruct-int4-ov --local-dir Phi-4-
 
 To download and compress a model (CPU/GPU/NPU):
 ```
- optimum-cli export openvino -m microsoft/Phi-3-mini-4k-instruct --weight-format int4 --sym --ratio 1.0 --group-size 128 Phi-3-mini-4k-instruct-npu
+ optimum-cli export openvino -m microsoft/Phi-3-mini-4k-instruct  --trust-remote-code --weight-format int4 --sym --ratio 1.0 --group-size 128 Phi-3-mini-4k-instruct-npu
 ```
 For NPU usage, please make sure the flags `--weight-format int4`, `--sym` and `--group-size 128` are set.
 
@@ -28,7 +28,7 @@ huggingface-cli login
 ```
 Then, you can execute this command to convert the model to be compatible with the NPU.
 ```
-optimum-cli export openvino --model meta-llama/Llama-3.2-3B-Instruct --task text-generation-with-past --weight-format int4 --group-size -1 --sym --ratio 1.0 llama-3.2-3b-instruct-INT4-npu
+optimum-cli export openvino --model meta-llama/Llama-3.2-3B-Instruct  --trust-remote-code --task text-generation-with-past --weight-format int4 --group-size -1 --sym --ratio 1.0 llama-3.2-3b-instruct-INT4-npu
 ```
 
 ## How to Run
