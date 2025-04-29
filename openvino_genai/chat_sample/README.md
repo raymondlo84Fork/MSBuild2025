@@ -17,9 +17,9 @@ huggingface-cli download OpenVINO/Phi-4-mini-instruct-int4-ov --local-dir Phi-4-
 
 To download and compress a model (CPU/GPU/NPU):
 ```
-optimum-cli export openvino -m TinyLlama/TinyLlama-1.1B-Chat-v1.0 --weight-format int4 --sym --ratio 1.0 --group-size 128 TinyLlama-1.1B-Chat-v1.0
+ optimum-cli export openvino -m microsoft/Phi-3-mini-instruct --weight-format int4 --sym --ratio 1.0 --group-size 128 Phi-3-mini-instruct-npu
 ```
-For NPU usage, please make sure the flags `--sym` and `--group-size 128` are set.
+For NPU usage, please make sure the flags `--weight-format int4`, `--sym` and `--group-size 128` are set.
 
 To obtain a meta llama demo, please first get a access token from this link [Access Security Tokens](https://huggingface.co/docs/hub/en/security-tokens), then login with the command line. Additionally, you have to accept to the agreement and wait for the approval (https://huggingface.co/meta-llama). Often this only take a few minutes to an hour.
 
