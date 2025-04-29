@@ -22,7 +22,7 @@ video_cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
 while True:
 	ret, frame = video_cap.read()
 	#can choose between intel:cpu, intel:gpu, or intel:npu
-	results = model_ov.predict(frame,conf=0.1, device="intel:gpu")
+	results = model_ov.predict(frame,conf=0.25, device="intel:gpu")
 	# Show results
 	frame_out=results[0].plot()
 	if not ret:
