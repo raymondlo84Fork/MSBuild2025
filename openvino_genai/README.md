@@ -18,7 +18,7 @@ Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
 ```
 python -m venv openvino_venv
 openvino_venv\Scripts\activate
-pip install --upgrade pip
+python -m pip install --upgrade pip
 
 pip install nncf==2.14.1 onnx==1.17.0 optimum-intel==1.22.0
 pip install openvino==2025.1 openvino-tokenizers==2025.1 openvino-genai==2025.1
