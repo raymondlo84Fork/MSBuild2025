@@ -24,7 +24,7 @@ optimum-cli export openvino --trust-remote-code --model openai/whisper-base whis
 ```
 python recorder.py
 ```
-This will run the recorder, and it will record from the microphone for 5 seconds.
+This will run the recorder, and it will record from the microphone for 5 seconds and save the result as `output.wav`.
 
 ## Run the code
 
