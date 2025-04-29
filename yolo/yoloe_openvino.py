@@ -16,8 +16,8 @@ model.export(format="openvino", dynamic=False, half=True)
 
 model_ov = YOLO(ov_model_name)
 video_cap = cv2.VideoCapture(0)
-#video_cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
-#video_cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
+video_cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
+video_cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
 
 while True:
 	ret, frame = video_cap.read()
