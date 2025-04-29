@@ -20,7 +20,7 @@ def main():
     pipe = openvino_genai.LLMPipeline(args.model_dir, device)
 
     config = openvino_genai.GenerationConfig()
-    config.max_new_tokens = 1000
+    config.max_new_tokens = 256
 
     pipe.start_chat()
     while True:
