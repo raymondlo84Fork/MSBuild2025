@@ -26,14 +26,9 @@ To obtain a meta llama demo, please first get a access token from this link [Acc
 ```
 huggingface-cli login
 ```
-Then, you can execute this command. 
+Then, you can execute this command to convert the model to be compatible with the NPU.
 ```
 optimum-cli export openvino --model meta-llama/Llama-3.2-3B-Instruct --task text-generation-with-past --weight-format int4 --group-size -1 --sym --ratio 1.0 llama-3.2-3b-instruct-INT4
-```
-
-Lastly, you can also also convert the `Phi-3-mini-4k-instruct` model with this command that is very similar to Meta Llama 3.2B for NPU. 
-```
-optimum-cli export openvino --model microsoft/Phi-3-mini-4k-instruct --task text-generation-with-past --weight-format int4 --group-size -1 --sym --ratio 1.0 microsoft/Phi-3-mini-4k-instruct-INT4
 ```
 
 ## How to Run
