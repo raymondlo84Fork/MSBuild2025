@@ -19,8 +19,6 @@ Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
 
 ## How to run the environments:
 
-Install Python 3.11.x or 3.12.x, and in PowerShell/Terminal, type the follow in the folder.
-
 Install the packages
 ```
 python -m venv openvino_venv
