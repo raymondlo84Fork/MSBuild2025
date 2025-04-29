@@ -1,4 +1,4 @@
-# YOLOE_OpenVINO_Demo
+# YOLOE OpenVINO Demo
 
 ![image](https://github.com/user-attachments/assets/8fcd323c-6a72-47aa-accd-26ed311b9b77)
 
