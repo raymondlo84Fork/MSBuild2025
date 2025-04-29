@@ -10,7 +10,7 @@ https://github.com/raymondlo84Fork/MSBuild2025/blob/main/openvino_genai/README.m
 
 ## How to use a LLM model from HuggingFace
 
-To download a pre-compressed model (for CPU/GPU only) and experiment with the latest Phi-4-mini-instruct model
+To download a pre-compressed model (for CPU/GPU only) and experiment with the latest Phi-4-mini-instruct model:
 ```
 huggingface-cli download OpenVINO/Phi-4-mini-instruct-int4-ov --local-dir Phi-4-mini-instruct-int4-ov
 ```
