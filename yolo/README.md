@@ -8,7 +8,7 @@ python -m venv venv
 venv\Scripts\activate
 python -m pip install --upgrade pip
 pip install openvino==2025.1.0
-pip install git+https://github.com/ultralytics/ultralytics.git
+pip install ultralytics==8.3.120
 ```
 
 ## Run
