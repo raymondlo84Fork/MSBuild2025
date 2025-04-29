@@ -28,7 +28,7 @@ huggingface-cli login
 ```
 Then, you can execute this command to convert the model to be compatible with the NPU.
 ```
-optimum-cli export openvino --model meta-llama/Llama-3.2-3B-Instruct --task text-generation-with-past --weight-format int4 --group-size -1 --sym --ratio 1.0 llama-3.2-3b-instruct-INT4
+optimum-cli export openvino --model meta-llama/Llama-3.2-3B-Instruct --task text-generation-with-past --weight-format int4 --group-size -1 --sym --ratio 1.0 llama-3.2-3b-instruct-INT4-npu
 ```
 
 ## How to Run
@@ -36,7 +36,13 @@ optimum-cli export openvino --model meta-llama/Llama-3.2-3B-Instruct --task text
 ```
 python chat_sample.py Phi-4-mini-instruct-int4-ov
 ```
-or replace `TinyLlama-1.1B-Chat-v1.0` with other models such as `Phi-3-mini-4k-instruct-int4-ov` or `Llama-3.2-3B-Instruct`.
+or replace the model with `Phi-3-mini-4k-instruct-int4-npu` or `Llama-3.2-3B-Instruct-npu`.
+
+By default, we enabled CPU in `chat_sample.py`. You can deploy the LLMs on GPU or NPU by simply replacing the device name as `GPU` or `NPU` in the code.
+```
+    device = 'CPU'  # GPU or NPU can be used as well
+    pipe = openvino_genai.LLMPipeline(args.model_dir, device)
+```
 
 Llama 3.2 3B example output:
 ![Screenshot 2025-04-28 133741](https://github.com/user-attachments/assets/532f6d66-2cc4-4a29-b71c-9c15f3716e7e)
