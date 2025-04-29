@@ -9,7 +9,7 @@ ov_model_name="yoloe-11l-seg_openvino_model"
 model = YOLOE(model_name) 
 
 # Set text prompt
-names = ["person", "ping pong paddle", "ball on a table", "blue cup", "table"]
+names = ["person", "cup", "sunglasses", "black keyboard", "white keyboard"]
 model.set_classes(names, model.get_text_pe(names))
 
 model.export(format="openvino", dynamic=False, half=True)
