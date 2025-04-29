@@ -9,7 +9,7 @@
 - NPU Driver: https://www.intel.com/content/www/us/en/download/794734/intel-npu-driver-windows.html
 - GPU Driver: https://www.intel.com/content/www/us/en/download/785597/intel-arc-iris-xe-graphics-windows.html
 
-3. Install Python 3.12.x
+3. Install Python 3.11.x, or 3.12.x
 - https://www.python.org/ftp/python/3.12.9/python-3.12.9-amd64.exe
 
 4. Enable PowerShell for venv
@@ -19,7 +19,7 @@ Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
 
 ## How to run the environments:
 
-Install Python 3.12.x, and in PowerShell/Terminal, type the follow in the folder.
+Install Python 3.11.x or 3.12.x, and in PowerShell/Terminal, type the follow in the folder.
 
 Install the packages
 ```
