@@ -25,6 +25,7 @@ optimum-cli export openvino --trust-remote-code --model openai/whisper-base whis
 python recorder.py
 ```
 This will run the recorder, and it will record from the microphone for 5 seconds and save the result as `output.wav`.
+or you can obtain a wav file from the [U.S. President John F. Kennedy's inaugural address](https://d.lib.msu.edu/vvl/2402/OBJ/download).
 
 ## Run the code
 
